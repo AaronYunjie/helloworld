@@ -8,8 +8,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+extern void printhello(void);
 int main(int argv, char *argc[])
 {
-        printf("hello world\n");
+        printhello();
         return 0;
 }

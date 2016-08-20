@@ -1,7 +1,9 @@
-objects = hello.o
-hello : $(objects)
-	cc -o hello $(objects)
+objects = printhello.o hello.o
+sayhello : $(objects)
+	cc -o sayhello $(objects)
+printhello.o : printhello.c
+	cc -c printhello.c
 hello.o : hello.c
 	cc -c hello.c
 clean :
-	rm hello $(objects)
+	rm sayhello $(objects)
